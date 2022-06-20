@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.ccb">
+    <!-- Allows reading of external memory -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Allows an application to open network sockets -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Allows an application to set write permissions on the built-in SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Allows an application to obtain network state -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Allows applications to access WiFi network information -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Allows applications to read and write phone status and identity -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Allows an application to access a CellID or WiFi hotspot to get a rough location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Permission to create/delete files in SDcard -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/panda"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/panda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".activity.SelectPhotoActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2a68f8e2a9f7c57c29a563bf50d3051d" /> <!-- Continuous location service -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".activity.GoodsInfoActivity" />
+        <activity android:name=".activity.ShopHomeActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.BaseWebViewActivity" />
+        <activity android:name=".activity.FrameZActivity" />
+        <activity
+            android:name=".activity.FrameAActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrameCActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrameBActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.URLAActivity" />
+        <activity android:name=".activity.OrderDetailsActivity" />
+    </application>
+
+</manifest>

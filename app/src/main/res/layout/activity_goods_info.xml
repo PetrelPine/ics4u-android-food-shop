@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".activity.GoodsInfoActivity">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/vBar"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorWhite" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/tvTitleBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/arrow_title_back" />
+
+            <TextView
+                android:id="@+id/tvTitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLength="10"
+                android:textColor="#212121"
+                android:textSize="17dp"
+                tools:text="TITLE" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <www.ccb.com.common.widget.double_layout.DoubleScrollViewLayout
+        android:id="@+id/doubleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <www.ccb.com.common.widget.double_layout.TopBottomMonitorScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <com.zhouwei.mzbanner.MZBannerView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="348dp"
+                    app:canLoop="true"
+                    app:indicatorAlign="center"
+                    app:indicatorPaddingLeft="10dp"
+                    app:open_mz_mode="true"></com.zhouwei.mzbanner.MZBannerView>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/cvp"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginLeft="@dimen/dp60"
+                    android:layout_marginRight="@dimen/dp60"
+                    android:clipChildren="false"
+                    android:visibility="gone"></android.support.v4.view.ViewPager>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:text="Ranch Chicken Snack Wrap with Crispy Chicken"
+                    android:textColor="#222"
+                    android:textSize="@dimen/dp16" />
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cvp"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp30"
+                    android:paddingBottom="@dimen/dp20"
+                    android:text="Price: $ 260\n\n\nSize: S/M/L\n\n\nService: 7 days for no reason refund\n\n\nDiscount: Subtract 10 if reaches 100\n\n\nParameter: Soft / Crispy\n\n\nComment: The taste is really good!!!\n\n\nAsk and Answer：\n\n\nIs it salty?\n\n\nIs it worth the price?\n\n\nShop name: Macdonald"
+                    android:textColor="#555"
+                    android:textSize="@dimen/dp16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp56"
+                    android:background="#ededed"
+                    android:gravity="center"
+                    android:text="↑↑↑Scroll up to see more." />
+            </LinearLayout>
+
+        </www.ccb.com.common.widget.double_layout.TopBottomMonitorScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <www.ccb.com.common.widget.double_layout.TopBottomMonitorScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <com.example.admin.ccb.view.AllListView
+                    android:id="@+id/alv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.example.admin.ccb.view.AllListView>
+
+            </www.ccb.com.common.widget.double_layout.TopBottomMonitorScrollView>
+        </RelativeLayout>
+    </www.ccb.com.common.widget.double_layout.DoubleScrollViewLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvWx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorOrange"
+            android:gravity="center"
+            android:text="WeChat Pay"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dp16" />
+
+        <TextView
+            android:id="@+id/tvAli"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/mainColor"
+            android:gravity="center"
+            android:text="AliPay"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#FF294C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="defaultBackground">#f7f7f7</color>
+    <color name="defaultDividerLine">#E0E0E0</color>
+    <color name="defaultTextview">#424242</color>
+    <color name="emphasisTextview">#292929</color>
+    <color name="colorOrange">#FFA500</color>
+
+    <color name="color_292929">#292929</color>
+    <color name="color_030303">#030303</color>
+    <color name="color_0076ff">#0076ff</color>
+    <color name="color_232326">#232326</color>
+    <color name="color_424242">#424242</color>
+    <color name="color_4a4a52">#4a4a52</color>
+    <color name="color_212121">#212121</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_65a7ff">#65a7ff</color>
+    <color name="color_e0e0e0">#e0e0e0</color>
+    <color name="color_8c8c8c">#8c8c8c</color>
+    <color name="color_87c489">#87c489</color>
+
+    <color name="wecart_color">#04BE02</color>
+    <color name="ali_color">#00A0E9</color>
+</resources>

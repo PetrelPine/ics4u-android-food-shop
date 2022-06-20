@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.ccb.fragment.MyFragment">
+
+    <!--    这里的图片太大会报错    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:background="@drawable/mine_bg">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/panda" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="@dimen/side_distance"
+        android:gravity="center_vertical"
+        android:text="Time Picker"
+        android:textColor="@color/defaultTextview"
+        android:textSize="15dp" />
+
+    <View
+        style="@style/Line_e0e0e0_Horizontal"
+        android:layout_marginLeft="@dimen/side_distance" />
+
+    <TextView
+        android:id="@+id/tvSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="@dimen/side_distance"
+        android:gravity="center_vertical"
+        android:text="Addresses"
+        android:textColor="@color/defaultTextview"
+        android:textSize="15dp" />
+
+    <View
+        style="@style/Line_e0e0e0_Horizontal"
+        android:layout_marginLeft="@dimen/side_distance" />
+
+    <TextView
+        android:id="@+id/tvKefu"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="@dimen/side_distance"
+        android:gravity="center_vertical"
+        android:text="Customer Service"
+        android:textColor="@color/defaultTextview"
+        android:textSize="15dp" />
+
+    <View
+        style="@style/Line_e0e0e0_Horizontal"
+        android:layout_marginLeft="@dimen/side_distance" />
+
+    <TextView
+        android:id="@+id/tvSet"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="@dimen/side_distance"
+        android:gravity="center_vertical"
+        android:text="Settings"
+        android:textColor="@color/defaultTextview"
+        android:textSize="15dp" />
+
+    <View
+        style="@style/Line_e0e0e0_Horizontal"
+        android:layout_marginLeft="@dimen/side_distance" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="@dimen/side_distance"
+        android:gravity="center_vertical"
+        android:text="About"
+        android:textColor="@color/defaultTextview"
+        android:textSize="15dp" />
+
+    <View
+        style="@style/Line_e0e0e0_Horizontal"
+        android:layout_marginLeft="@dimen/side_distance" />
+</LinearLayout>

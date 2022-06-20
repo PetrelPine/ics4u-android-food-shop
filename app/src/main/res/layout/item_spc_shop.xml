@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/spc_cb_shops"
+            style="@style/spc_checkbox_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/side_distance"
+            android:paddingRight="@dimen/side_distance" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/orderfrom_shangdian" />
+
+        <TextView
+            android:id="@+id/tvShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/side_distance"
+            android:text="ShopName"
+            android:textColor="#666666"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvGoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/defaultBackground"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/spc_tv_zong_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/side_distance"
+            android:text="$: 180.60"
+            android:textColor="@color/mainColor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/spc_tv_price_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/spc_tv_zong_price"
+            android:text="Total price: "
+            android:textColor="#666666"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/spc_tv_price_money"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/spc_tv_shop_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 items in total"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/Line_e0e0e0_Horizontal" />
+</LinearLayout>

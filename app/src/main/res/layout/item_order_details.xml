@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp175"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_7" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp175"
+            android:layout_marginTop="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_6" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp175"
+            android:layout_marginTop="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_5" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp175"
+            android:layout_marginTop="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_4" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp175"
+            android:layout_marginTop="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp175"
+            android:layout_marginTop="@dimen/dp2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:background="@color/color_65a7ff"
+            android:gravity="center"
+            android:text="Detail Page"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp28" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fruit_1" />
+    </LinearLayout>
+
+</FrameLayout>

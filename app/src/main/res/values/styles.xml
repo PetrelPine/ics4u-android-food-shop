@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <!-- Bottom navigation style -->
+    <style name="main_tab_button">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@drawable/rgbtn_select</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+
+    <!-- Circle of friends image full screen style -->
+    <style name="Pic_Dialog">
+        <!-- border -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Whether to surface on the activity -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- translucence -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- no title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- blur -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">1</item>
+        <!-- animation -->
+        <item name="android:windowAnimationStyle">@style/ShowImageDialogAnimation</item>
+    </style>
+
+    <style name="ShowImageDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="Line_e0e0e0_Horizontal">
+        <item name="android:background">@color/defaultDividerLine</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px1</item>
+    </style>
+
+    <!-- shopping cart checkbox -->
+    <style name="spc_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:drawableLeft">@drawable/spc_cb</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- Default style Note * The style can only be modified, do not delete any item or an error will be reported -->
+
+    <!-- custom dialog -->
+    <style name="alert_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorTransparent
+        </item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Line_e0e0e0_Vertical">
+        <item name="android:background">@color/color_e0e0e0</item>
+        <item name="android:layout_width">@dimen/px1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>
